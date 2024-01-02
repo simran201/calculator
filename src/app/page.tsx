@@ -41,18 +41,18 @@ export default function Home() {
     "C",
   ];
   return (
-    <main className="container flex min-h-screen flex-col text-center p-10">
+    <main className=" flex min-h-screen flex-col items-center p-10">
       <h1 className=" font-bold fs-36 mb-10">Calculator</h1>
       <div className="bg-white p-8 rounded-lg shadow-lg">
         <input
           type="text"
-          className="w-full mb-2 text-3xl border-b-2 border-gray-400 focus:outline-none"
+          className="w-full mb-2 text-xl border-b-2 border-gray-400 focus:outline-none"
           value={expression}
           
         />
         <input
           type="text"
-          className="w-full text-4xl font-bold mb-4 "
+          className="w-full text-xl font-bold mb-4 "
           value={result}
           
         />
@@ -61,7 +61,7 @@ export default function Home() {
             <button
             key={btn}
             onClick={()=> handleButtonClick(btn)}
-            className="text-4xl bg-gray-300 hover:bg-gray-400 p-4 rounded-lg">
+            className="text-xl bg-gray-300 hover:bg-gray-400 p-4 rounded-lg">
               {btn}
             </button>
           ))}
